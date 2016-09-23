@@ -1,0 +1,50 @@
+#
+# /etc/bash.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+PS1='( \[$(tput setaf 2)\]\u @ \h\[$(tput sgr0)\] ) ( \[$(tput setaf 2)\]\l\[$(tput sgr0)\] ) ( \[$(tput setaf 2)\]$(pwd)\[$(tput sgr0)\] ) ( \[$(tput setaf 2)\]\t\[$(tput sgr0)\] )\n \W \$\[$(tput sgr0)\] '
+#PS1='\[$(tput setaf 2 ; tput rev)\]\h @ \u\[$(tput setaf 2 ; tput sgr0)\] \[$(tput setaf 2 ; tput rev)\]\W\[$(tput sgr0)\] \$ '
+#PS1='\[$(tput setaf 2)\]\l \W >\[$(tput sgr0)\] '
+PS2='> '
+PS3='> '
+PS4='+ '
+
+alias ls='ls -F --color=auto --group-directories-first'
+alias pdf='jfbview'
+
+PATH=/home/cooro/bin:$PATH
+
+case ${TERM} in
+  xterm*|rxvt*|Eterm|aterm|kterm|gnome*)
+    PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND; }'printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/\~}"'
+
+    ;;
+  screen)
+    PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND; }'printf "\033_%s@%s:%s\033\\" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/\~}"'
+    ;;
+esac
+
+[ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
+
+#if [ "$TERM" = "linux" ]; then
+#    echo -en "\e]P0393939" #black
+#    echo -en "\e]P82e3537" #darkgrey
+#    echo -en "\e]P1c72d41" #darkred
+#    echo -en "\e]P9ff5d4a" #red
+#    echo -en "\e]P285c600" #darkgreen
+#    echo -en "\e]PAb3ff1d" #green
+#    echo -en "\e]P3ffa600" #brown
+#    echo -en "\e]PBffaa0f" #yellow
+#    echo -en "\e]P40099bc" #darkblue
+#    echo -en "\e]PC5cdede" #blue
+#    echo -en "\e]P55b1e35" #darkmagenta
+#    echo -en "\e]PDbe4773" #magenta
+#    echo -en "\e]P6446a6b" #darkcyan
+#    echo -en "\e]PE76b2b3" #cyan
+#    echo -en "\e]P74f585d" #lightgrey
+#    echo -en "\e]PF85919b" #white
+#    clear #for background artifacting
+#fi
