@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo '{"version":1}'
+
+echo '['
+
+echo '[],'
+
+while [ 1 ]
+do
+    echo '['
+
+    GETMEMUSE=$(free -h | grep Mem | awk '{print $3}')
+    echo '{"full_text": "mem '$GETMEMUSE'"},'
+    
+    GETSWAPUSE=$(free -h | grep Swap | awk '{print $3}')
+    echo '{"full_text": "swap '$GETSWAPUSE'"},'
+    
+    GETHOMEUSE=$(du -sh /home/cooro | awk '{print $1}')
+    echo '{"full_text": "home '$GETHOMEUSE'"},'
+    
+    GETDATE=$(date +%Y.%m.%d\ %H:%M:%S)
+    echo '{"full_text": "'$GETDATE'"}'
+    
+    echo '],'
+    sleep 5
+done

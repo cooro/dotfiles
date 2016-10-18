@@ -1,0 +1,3 @@
+#!/bin/bash
+
+i3lock --insidevercolor=555555dd --insidewrongcolor=885555dd --insidecolor=555555dd --ringvercolor=aaaaaadd --ringwrongcolor=ffffffdd --ringcolor=aaaaaadd --linecolor=888888dd --textcolor=888888dd --textattemptscolor=888888dd --keyhlcolor=dddddddd --bshlcolor=ffffffdd -f -i ~/documents/sayaka-dead-small.png
