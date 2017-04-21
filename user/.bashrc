@@ -5,7 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# PSs
+
+# PSs (geez there are a lot of these PS1s I've made... they are kept for posterity mostly)
 PS1=' \[$(tput setaf 2)\]\W\[$(tput sgr0)\] \[$(tput setaf 15)\]\$\[$(tput sgr0)\] '
 #PS1='( \[$(tput setaf 1)\]\u @ \h\[$(tput sgr0)\] ) ( \[$(tput setaf 1)\]\l\[$(tput sgr0)\] ) ( \[$(tput setaf 1)\]$(pwd)\[$(tput sgr0)\] ) ( \[$(tput setaf 1)\]\t\[$(tput sgr0)\] )\n \W \$\[$(tput sgr0)\] '
 #PS1='\[$(tput setaf 2 ; tput rev)\]\h @ \u\[$(tput setaf 2 ; tput sgr0)\] \[$(tput setaf 2 ; tput rev)\]\W\[$(tput sgr0)\] \$ '
@@ -18,6 +19,13 @@ PS4='+ '
 alias ls='ls -F --color=auto --group-directories-first'
 alias cls='clear'
 alias pdf='jfbview'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+alias .......='cd ../../../../../..'
+
 
 # Bash Completion
 complete -d cd
@@ -25,6 +33,9 @@ complete -cf sudo
 
 # PATH
 PATH=~/bin:$PATH
+
+
+
 
 case ${TERM} in
   xterm*|rxvt*|Eterm|aterm|kterm|gnome*)

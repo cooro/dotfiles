@@ -1,0 +1,41 @@
+
+/*-----------------------------------------------------------------
+
+Author : Your Name
+
+Date last modified :
+
+Assumptions: 
+
+Purpose:
+
+
+
+-----------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------
+
+Function ( if present) documentation. 
+
+Documentation should be duplicated in prototypes and definitions. 
+
+Author : Your Name
+
+Date last modified :
+
+Assumptions: 
+ 
+In parameters :	range of expected input and whether error checking is 
+		internal to function or before function is called. 
+
+Out parameters:	range of expected output and whether error checking is 
+		internal to function or before function is called.
+
+In/Out parameters : same as in or out parameters 
+
+Purpose:  Explain any exotic algorithms here
+
+-----------------------------------------------------------------*/
+ 

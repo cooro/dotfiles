@@ -1,0 +1,75 @@
+341 BULLavard
+Moo York
+MY
+223322
+275000 3 5 4 Rube Bulls
+Moose Cow
+Kaos
+66622
+25000 1 4 123 Street King
+Slap Out
+Grace
+77755 
+112000 2 3 123 A nat on Meigh
+Bug Tussel
+Mind
+11223
+55000
+2
+3
+12 GullaBULL
+Moo York
+Grace
+77992
+315000
+2
+3
+4 Red Nek Comma Mist
+YouallCrane
+Kaos
+88899
+175000
+3
+4
+12 Moose Mile
+Mostlee
+Disturbed
+55667
+62000
+1
+5
+2 Farm Out
+No Hope
+Mind
+78912
+200000
+3
+5
+1 Frozen over
+Sideberia
+Chaos
+99881
+315000
+3
+5
+123 Big Moose Take
+Cirrus
+Disturbed
+77661
+180000
+2
+2
+1 George
+Washington
+MS
+77661
+18000
+2
+3
+1 Martha
+Washington
+MD
+77661
+18000
+2
+3

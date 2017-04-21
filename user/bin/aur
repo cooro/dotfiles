@@ -1,4 +1,5 @@
 #!/bin/bash
+mkdir -p ~/aur
 cd ~/aur
 curl https://aur.archlinux.org/cgit/aur.git/snapshot/$1.tar.gz > $1.tar.gz
 tar xvf $1.tar.gz

@@ -1,0 +1,3 @@
+#!/bin/bash
+aur package-query
+aur yaourt
