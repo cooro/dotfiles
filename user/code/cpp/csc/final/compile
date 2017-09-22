@@ -1,2 +1,0 @@
-#!/bin/sh
-g++ Arraystructs.cpp -o arraystructs.out
