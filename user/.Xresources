@@ -2,42 +2,48 @@
 ! .Xresources
 !
 
-URxvt.scrollBar: false
-URxvt.font: xft:Noto Mono:size=10
+URxvt*scrollBar: false
+URxvt*font:     xft:PxPlus IBM CGAthin:size=6:antialias=false:hinting=false
+URxvt*boldFont: xft:PxPlus IBM CGA:antialias=false:hinting=false
 
-! uncomment if using ibus
-!URxvt.inputMethod: ibus
-!URxvt.preeditType: OverTheSpot
+!URxvt*inputMethod: ibus
+!URxvt*preeditType: OverTheSpot
 
 ! uncomment to activate transparency (also needs compositor)
-!URxvt.depth: 32
+URxvt*depth: 32
 
-*.foreground:  #f1f1f0
-*.background:  #282a36
+
+!URxvt*transparent: true
+!URxvt*shading: 99
+!URxvt*blurRadius: 10
+
+*.foreground:  #ffffff
+*.background:  rgba:0000/0000/0000/ffff
+
 *.cursorColor: #f1f1f0
 
 ! black
-*.color0:  #282a36
-*.color8:  #282a36
+*.color0:  #333333
+*.color8:  #888888
 ! red
-*.color1:  #ff5c57
-*.color9:  #ff5c57
+*.color1:  #ff007f
+*.color9:  #ff007f
 ! green
-*.color2:  #5af78e
-*.color10: #5af78e
+*.color2:  #7fff00
+*.color10: #7fff00
 ! yellow
-*.color3:  #f3f99d
-*.color11: #f3f99d
+*.color3:  #ff7f00
+*.color11: #ff7f00
 ! blue
-*.color4:  #57c7ff
-*.color12: #57c7ff
+*.color4:  #007fff
+*.color12: #007fff
 ! magenta
-*.color5:  #ff6ac1
-*.color13: #ff6ac1
+*.color5:  #9f3fff
+*.color13: #9f3fff
 ! cyan
-*.color6:  #9aedfe
-*.color14: #9aedfe
+*.color6:  #00ff7f
+*.color14: #00ff7f
 ! white
-*.color7:  #f1f1f0
-*.color15: #f1f1f0
+*.color7:  #aaaaaa
+*.color15: #ffffff
 

@@ -1,0 +1,45 @@
+connect to the internet
+
+timedatectl set-ntp true
+
+partition disk
+
+mount drives and mount swap
+
+select mirrors
+
+install base and base-devel
+
+genfstab -U /mnt >> /mnt/etc/fstab
+
+arch-chroot /mnt
+
+ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
+
+hwclock --systohc
+
+uncomment a locale from /etc/locale.gen
+
+locale-gen
+
+echo "LANG=en_US.UTF-8" > /etc/locale.conf
+
+echo "chocobo" > /etc/hostname
+
+pacman -S wpa_supplicant dialog grub
+
+passwd
+
+grub-install --target=i386-pc /dev/sda
+
+grub-mkconfig -o /boot/grub/grub.cfg
+
+exit and reboot
+
+make a user
+
+log into user
+
+move homesave into the home directory
+
+run installyaourt

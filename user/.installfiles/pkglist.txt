@@ -1,7 +1,11 @@
-mplayer
+xorg-server
+xorg-xinit
+mpv
 youtube-dl
 pulsemixer
 i3-gaps
+i3lock
+i3blocks
 dmenu
 rxvt-unicode
 firefox
@@ -16,5 +20,7 @@ tmux
 compton
 unzip
 unrar
-downgrade
-
+w3m
+toxic
+newsbeuter
+fbgrab
