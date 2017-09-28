@@ -5,17 +5,14 @@
 URxvt*scrollBar: false
 URxvt*font:     xft:PxPlus IBM CGAthin:size=6:antialias=false:hinting=false
 URxvt*boldFont: xft:PxPlus IBM CGA:antialias=false:hinting=false
+URxvt*letterSpace: +1
+URxvt*lineSpace: +1
 
 !URxvt*inputMethod: ibus
 !URxvt*preeditType: OverTheSpot
 
 ! uncomment to activate transparency (also needs compositor)
 URxvt*depth: 32
-
-
-!URxvt*transparent: true
-!URxvt*shading: 99
-!URxvt*blurRadius: 10
 
 *.foreground:  #ffffff
 *.background:  rgba:0000/0000/0000/ffff

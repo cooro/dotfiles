@@ -18,10 +18,10 @@ set $sysfont pango:PxPlus IBM CGA 6
 font $sysfont
 
 # COLOR VARS: dark; light; accent; red
-set $c0 #3e3459
-set $c1 #c1b8d9
-set $c2 #6b75ff
-set $c3 #f67a97
+set $c0 #000000
+set $c1 #ffffff
+set $c2 #ff7f00
+set $c3 #ff00f7
 
 # Window Borders        bor bac txt ind child
 #                       der gnd     cat border
@@ -42,8 +42,8 @@ bar {
         statusline $c1
         separator  $c2
 #                          lin fil txt
-        focused_workspace  $c0 $c1 $c0
-        active_workspace   $c0 $c0 $c1
+        focused_workspace  $c2 $c1 $c0
+        active_workspace   $c0 $c1 $c0
         inactive_workspace $c0 $c0 $c1
         urgent_workspace   $c0 $c3 $c0
         binding_mode       $c0 $c3 $c0
@@ -122,6 +122,9 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
+
+# move workspace to next monitor
+bindsym $mod+x move workspace to output right
 
 # switch to workspace
 bindsym $mod+1 workspace 01

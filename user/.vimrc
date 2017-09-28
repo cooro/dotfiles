@@ -2,7 +2,7 @@ set number  " numbers on the left margin
 syntax on   " syntax highlighting
 
 " Colorscheme and vimdiff color settings "
-colorscheme elflord
+"colorscheme elflord
 hi DiffAdd    ctermfg=black ctermbg=green
 hi DiffChange ctermfg=black ctermbg=yellow
 hi DiffDelete ctermfg=black ctermbg=red
