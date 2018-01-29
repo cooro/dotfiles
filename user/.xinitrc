@@ -32,5 +32,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-compton -bo="0.0" &
+# if the user has a special keymap, set that
+test -f ~/.Xkeymap && xkbcomp ~/.Xkeymap $DISPLAY
+
 exec i3

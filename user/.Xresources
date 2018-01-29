@@ -12,35 +12,35 @@ URxvt*lineSpace: +1
 !URxvt*preeditType: OverTheSpot
 
 ! uncomment to activate transparency (also needs compositor)
-URxvt*depth: 32
+!URxvt*depth: 32
 
 *.foreground:  #ffffff
-*.background:  rgba:0000/0000/0000/ffff
+*.background:  #070a0d
 
 *.cursorColor: #f1f1f0
 
 ! black
-*.color0:  #333333
-*.color8:  #888888
+*.color0:  #000000
+*.color8:  #5c6266
 ! red
-*.color1:  #ff007f
-*.color9:  #ff007f
+*.color1:  #ff0055
+*.color9:  #ff0055
 ! green
-*.color2:  #7fff00
-*.color10: #7fff00
+*.color2:  #55ff00
+*.color10: #55ff00
 ! yellow
-*.color3:  #ff7f00
-*.color11: #ff7f00
+*.color3:  #ff5500
+*.color11: #ff5500
 ! blue
-*.color4:  #007fff
-*.color12: #007fff
+*.color4:  #3377ff
+*.color12: #3377ff
 ! magenta
-*.color5:  #9f3fff
-*.color13: #9f3fff
+*.color5:  #7f3fff
+*.color13: #7f3fff
 ! cyan
-*.color6:  #00ff7f
-*.color14: #00ff7f
+*.color6:  #00d282
+*.color14: #00d282
 ! white
-*.color7:  #aaaaaa
+*.color7:  #acb8bf
 *.color15: #ffffff
 
